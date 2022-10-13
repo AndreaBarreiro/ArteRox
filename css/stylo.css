@@ -497,7 +497,25 @@ main div img {
    }
 
    .imgLupa {
-      width: 0.4cm;
-      height: 0.4cm;
+      width: 30%;
+      height: 30%;
+   }
+
+   .etapaFinal div {
+      width: 95%;
+   }
+
+   .tutorialGral div {
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .video {
+      width: 95%;   
+   }
+
+   .trabajando img {
+      width: 80%;
    }
 }
