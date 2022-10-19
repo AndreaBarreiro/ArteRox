@@ -346,6 +346,7 @@ footer div {
    justify-content: space-between;
    flex-direction: row-reverse;
    align-items: center;
+   padding: 1rem;
    background: rgb(221, 142, 177);
    background: radial-gradient(circle, rgba(221, 142, 177, 1) 0%, rgba(27, 145, 164, 1) 95%);
 }
@@ -364,7 +365,7 @@ footer ul li a:hover {
    background-color: #555bc386;
    font-weight: bold;
    border-radius: 0.5rem;
-   padding: 1rem;
+   padding: 0.5rem;
 }
 
 .copy {
