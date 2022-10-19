@@ -64,10 +64,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-   background-color: #555bc3af;
+   background-color: #555bc386;
    font-weight: bold;
    border-radius: 0.5rem;
-   padding: 1rem;
+   padding: 0.5rem;
+   color: rgba(32, 32, 94, 0.87);
 }
 
 .logo {
