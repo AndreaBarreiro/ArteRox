@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** reset para REMS- 62.5% = 10px de 16px **/
+ }
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+ }
+ 
+ 
+ /** globales **/
+ img {
+    max-width: 100%;
+ }
+ 
+ h1 {
+    font-size: 4rem;
+    font-family: 'mali';
+    font-weight: 700;
+ }
+ 
+ h2 {
+    font-size: 3rem;
+    font-family: 'mali';
+    font-weight: 500;
+ }
+ 
+ h3 {
+    font-size: 2rem;
+    font-family: 'mali';
+    font-weight: 500;
+ }
+ 
+ p {
+    font-size: 2rem;
+    font-family: 'mali';
+    font-weight: 300;
+    text-align: center;
+ }

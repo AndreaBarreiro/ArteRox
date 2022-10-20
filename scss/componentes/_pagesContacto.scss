@@ -1,0 +1,32 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    div {
+        width: min-content;
+        background-color: rgb(250, 247, 244);
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: -15rem;
+        padding: 5rem;
+        box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75);
+    }
+
+    section img {
+        max-width: 100%;
+    }
+
+    form {
+        font-size: 1.5rem;
+        font-family: 'mali';
+        padding: 1em;
+    }
+}

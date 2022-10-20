@@ -1,0 +1,354 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** reset para REMS- 62.5% = 10px de 16px **/ }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/** globales **/
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: 4rem;
+  font-family: 'mali';
+  font-weight: 700; }
+
+h2 {
+  font-size: 3rem;
+  font-family: 'mali';
+  font-weight: 500; }
+
+h3 {
+  font-size: 2rem;
+  font-family: 'mali';
+  font-weight: 500; }
+
+p {
+  font-size: 2rem;
+  font-family: 'mali';
+  font-weight: 300;
+  text-align: center; }
+
+header {
+  background: #dd8eb1;
+  background: radial-gradient(circle, #dd8eb1 0%, #1b91a4 95%); }
+  header nav ul {
+    display: inline-flex;
+    list-style: none;
+    font-family: 'Mali', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    gap: 2rem;
+    margin-right: 1rem;
+    align-items: baseline; }
+    header nav ul li a {
+      text-decoration: none;
+      color: black; }
+      header nav ul li a:hover {
+        background-color: #555bc386;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        color: rgba(32, 32, 94, 0.87); }
+
+.contenedorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/*----LOGO arte rox-----*/
+.logo {
+  width: auto;
+  max-height: 150px;
+  border-radius: 5% 5%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  opacity: calc(0.8);
+  box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66); }
+
+/*img LUPA*/
+.imgLupa {
+  width: 0.8cm;
+  height: 0.8cm;
+  margin-right: 1rem; }
+  .imgLupa:hover {
+    background-color: #555bc3b7;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem; }
+
+/*Carrusel*/
+.imgCarrusel {
+  width: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .imgCarrusel .carousel-inner img {
+    width: 100%;
+    max-height: 700px; }
+
+/** hero o inicio del main **/
+.fondoh1Inicio h1 {
+  text-align: center;
+  background-image: url(../img/fondo-css-3.jpg);
+  top: 0;
+  bottom: unset; }
+
+section {
+  margin-top: 0.5rem;
+  size: 60%; }
+
+/*---tarjetas de productos----*/
+.listaProductos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 1rem;
+  padding: 0.8rem; }
+  .listaProductos div {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    /*margin: 0 1rem 1rem 1rem;*/
+    box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67); }
+    .listaProductos div img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      transition: all 1s; }
+    .listaProductos div .textoenContenedor {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      box-shadow: inset 0px -66px 5px -33px #174a53;
+      /*transicion del div productos*/ }
+      .listaProductos div .textoenContenedor a {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.63);
+        background-color: background #85ffca;
+        background: linear-gradient(90deg, #85ffca 0%, #a8b1ff 50%, #ec9eff 100%);
+        background: -moz-linear-gradient(90deg, #85ffca 0%, #a8b1ff 50%, #ec9eff 100%);
+        background: -webkit-linear-gradient(90deg, #85ffca 0%, #a8b1ff 50%, #ec9eff 100%);
+        width: 100%;
+        transition-property: background-color white;
+        transition-duration: 3s; }
+    .listaProductos div div {
+      transition: background-color linear 1s;
+      background: #9b6897; }
+  .listaProductos div a {
+    display: block;
+    font-size: 3rem;
+    font-family: 'mali';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #471616; }
+
+.listaProductos section {
+  display: inline-block;
+  text-align: center; }
+  .listaProductos section:hover {
+    background-color: rgba(109, 47, 73, 0.589);
+    transition-duration: 2s; }
+
+/*seccio etapa final*/
+.etapaFinal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 3rem; }
+  .etapaFinal div {
+    padding: 1rem;
+    margin-bottom: 1rem; }
+  .etapaFinal .tutorialGral {
+    grid-column: 1 / 3;
+    text-decoration: underline; }
+    .etapaFinal .tutorialGral div h2 {
+      text-align: center; }
+    .etapaFinal .tutorialGral .tutorialTitulo {
+      background-color: #3EECAC;
+      background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+      padding: 0.7rem;
+      text-transform: uppercase; }
+      .etapaFinal .tutorialGral .tutorialTitulo .tutorialconVideo {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        grid-template-rows: 0.5fr 1fr 2fr; }
+      .etapaFinal .tutorialGral .tutorialTitulo .video {
+        display: block;
+        margin: 0 auto; }
+    .etapaFinal .tutorialGral .trabajando {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 0.8fr;
+      grid-template-areas: "tituloTrabajando tituloTrabajando" "imgTrabajando imgTrabajando" "textoTrabajando textoTrabajando"; }
+    .etapaFinal .tutorialGral .tituloTrabajando {
+      padding-top: 1rem;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      background-color: rgba(190, 149, 158, 0.514); }
+    .etapaFinal .tutorialGral .imgTrabajando {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+      transition: 2s;
+      box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75); }
+      .etapaFinal .tutorialGral .imgTrabajando:hover {
+        transform: scale(1.2); }
+      .etapaFinal .tutorialGral .imgTrabajando .textoTrabajando {
+        display: inline;
+        margin-top: 1.5rem; }
+  .etapaFinal .blog {
+    border: solid;
+    border-color: #93D6D6 #B79AD4;
+    border-style: inset; }
+    .etapaFinal .blog div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr; }
+      .etapaFinal .blog div img {
+        width: auto;
+        height: 300px;
+        object-fit: cover; }
+      .etapaFinal .blog div p {
+        font-family: sans-serif;
+        color: #100635; }
+      .etapaFinal .blog div .blogClientes div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        border: 1px rgba(0, 0, 0, 0.37) dashed; }
+    .etapaFinal .blog h2 {
+      background-color: rgba(128, 128, 128, 0.507);
+      padding: 1rem;
+      margin-top: 0; }
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1rem;
+  background: #dd8eb1;
+  background: radial-gradient(circle, #dd8eb1 0%, #1b91a4 95%); }
+  footer div ul {
+    display: inline-flex;
+    list-style: none;
+    font-family: 'Mali', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    gap: 2rem; }
+    footer div ul li a {
+      text-decoration: none;
+      color: rgba(51, 43, 47, 0.96);
+      justify-content: flex-end; }
+      footer div ul li a:hover {
+        background-color: #555bc386;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        padding: 0.5rem; }
+  footer div section a {
+    margin: 1rem; }
+  footer div .copy {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .formulario input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .formulario div {
+    width: min-content;
+    background-color: #faf7f4;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: -15rem;
+    padding: 5rem;
+    box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 14px 128px 29px rgba(0, 0, 0, 0.75); }
+  .formulario section img {
+    max-width: 100%; }
+  .formulario form {
+    font-size: 1.5rem;
+    font-family: 'mali';
+    padding: 1em; }
+
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  .listaProductos div a {
+    font-size: 2rem; }
+  .blogClientes div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; } }
+
+@media screen and (max-width: 700px) {
+  .listaProductos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .listaProductos div a {
+    font-size: 2rem;
+    transition-duration: none; } }
+
+@media screen and (max-width: 800px) {
+  .etapaFinal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+  .etapaFinal div {
+    margin-bottom: 0; }
+  .blogClientes div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-block: 0;
+    block-size: 300px;
+    align-content: center; }
+  .blog div img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%; }
+  footer div {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) {
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+@media screen and (max-width: 480px) {
+  .listaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr; }
+  .imgLupa {
+    width: 30%;
+    height: 30%; }
+  .etapaFinal div {
+    width: 95%; }
+  .tutorialGral div {
+    width: 95%;
+    justify-content: center;
+    align-items: center; }
+  .video {
+    width: 95%; }
+  .trabajando img {
+    width: 80%; } }

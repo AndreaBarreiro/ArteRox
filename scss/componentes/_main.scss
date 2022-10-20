@@ -1,0 +1,219 @@
+/*Carrusel*/
+
+.imgCarrusel {
+    width: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .carousel-inner img {
+        width: 100%;
+        max-height: 700px;
+    }
+}
+
+/** hero o inicio del main **/
+
+.fondoh1Inicio h1 {
+    text-align: center;
+    background-image: url(../img/fondo-css-3.jpg);
+    top: 0;
+    bottom: unset;
+}
+
+section {
+    margin-top: 0.5rem;
+    size: 60%;
+}
+
+/*---tarjetas de productos----*/
+
+.listaProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+
+    div {
+        display: inline-block;
+        text-align: center;
+        border: 1px solid black;
+        /*margin: 0 1rem 1rem 1rem;*/
+        box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            transition: all 1s;
+        }
+
+        .textoenContenedor {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            box-shadow: inset 0px -66px 5px -33px #174a53;
+
+            /*transicion del div productos*/
+            a {
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 0;
+                text-align: center;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.63);
+                background-color: background hsla(154, 100%, 76%, 1);
+
+                background: linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+                background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+                background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+                width: 100%;
+                transition-property: background-color white;
+                transition-duration: 3s;
+            }
+        }
+
+        div {
+            transition: background-color linear 1s;
+            background: rgb(155, 104, 151);
+        }
+    }
+
+    div a {
+        display: block;
+        font-size: 3rem;
+        font-family: 'mali';
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #471616;
+    }
+}
+
+.listaProductos section {
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(109, 47, 73, 0.589);
+        transition-duration: 2s;
+
+    }
+}
+
+/*seccio etapa final*/
+.etapaFinal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 3rem;
+
+    div {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tutorialGral {
+        grid-column: 1 / 3;
+        text-decoration: underline;
+
+        div h2 {
+            text-align: center;
+        }
+
+        .tutorialTitulo {
+            background-color: #3EECAC;
+            background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+            padding: 0.7rem;
+            text-transform: uppercase;
+
+            .tutorialconVideo {
+                display: grid;
+                grid-template-columns: 2fr 1.5fr;
+                grid-template-rows: 0.5fr 1fr 2fr;
+            }
+
+            .video {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .trabajando {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 0.8fr;
+            grid-template-areas: "tituloTrabajando tituloTrabajando"
+                "imgTrabajando imgTrabajando"
+                "textoTrabajando textoTrabajando"
+        }
+
+        .tituloTrabajando {
+            padding-top: 1rem;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            background-color: rgba(190, 149, 158, 0.514);
+        }
+
+        .imgTrabajando {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+            transition: 2s;
+            box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            .textoTrabajando {
+                display: inline;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .blog {
+        border: solid;
+        border-color: #93D6D6 #B79AD4;
+        border-style: inset;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr;
+
+            img {
+                width: auto;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            p {
+                font-family: sans-serif;
+                color: rgb(16, 6, 53);
+            }
+
+            .blogClientes div {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 1fr;
+                border: 1px rgba(0, 0, 0, 0.37) dashed;
+            }
+        }
+
+        h2 {
+            background-color: rgba(128, 128, 128, 0.507);
+            padding: 1rem;
+            margin-top: 0;
+        }
+    }
+
+}

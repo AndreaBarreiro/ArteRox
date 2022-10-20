@@ -1,0 +1,93 @@
+/*Media Queries*/
+
+@media screen and (max-width: 900px) {
+    .listaProductos div a {
+        font-size: 2rem;
+    }
+
+    .blogClientes div {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .listaProductos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .listaProductos div a {
+        font-size: 2rem;
+        transition-duration: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .etapaFinal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    .etapaFinal div {
+        margin-bottom: 0;
+    }
+
+    .blogClientes div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding-block: 0;
+        block-size: 300px;
+        align-content: center;
+    }
+
+    .blog div img {
+        object-fit: contain;
+        width: 70%;
+        height: 70%;
+    }
+
+    footer div {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .listaProductos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .listaProductos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr;
+    }
+
+    .imgLupa {
+        width: 30%;
+        height: 30%;
+    }
+
+    .etapaFinal div {
+        width: 95%;
+    }
+
+    .tutorialGral div {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video {
+        width: 95%;
+    }
+
+    .trabajando img {
+        width: 80%;
+    }
+}

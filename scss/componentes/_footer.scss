@@ -1,0 +1,40 @@
+footer div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(221, 142, 177);
+    background: radial-gradient(circle, rgba(221, 142, 177, 1) 0%, rgba(27, 145, 164, 1) 95%);
+
+    ul {
+        display: inline-flex;
+        list-style: none;
+        font-family: 'Mali', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        gap: 2rem;
+
+        li a {
+            text-decoration: none;
+            color: rgba(51, 43, 47, 0.96);
+            justify-content: flex-end;
+
+            &:hover {
+                background-color: #555bc386;
+                font-weight: bold;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    section a {
+        margin: 1rem;
+    }
+
+    .copy {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+}
