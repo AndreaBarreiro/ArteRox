@@ -1,0 +1,15 @@
+.quienSoy h1 {
+    text-align: center;
+}
+
+__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+}

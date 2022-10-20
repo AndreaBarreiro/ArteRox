@@ -1,7 +1,9 @@
-@import "../scss/base/generales";
-@import "../scss/componentes/header";
-@import "../scss/componentes/main";
-@import "../scss/componentes/footer";
-@import "../scss/componentes/pagesContacto";
-@import "../scss/base/variables";
-@import "../scss/base/media-query";
+@import "./base/generales";
+@import "./componentes/header";
+@import "./componentes/main";
+@import "./componentes/footer";
+@import "./componentes/pagesBusqueda";
+@import "./componentes/pagesContacto";
+@import "./componentes/pagesQuiensoy";
+@import "./base/variables";
+@import "./base/media-query";
