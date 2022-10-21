@@ -1,63 +1,56 @@
 header {
-    background: rgb(221, 142, 177);
-    background: radial-gradient(circle, rgba(221, 142, 177, 1) 0%, rgba(27, 145, 164, 1) 95%);
-
-    nav ul {
-        display: inline-flex;
-        list-style: none;
-        font-family: 'Mali', sans-serif;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        gap: 2rem;
-        margin-right: 1rem;
-        align-items: baseline;
-
-        li a {
-            text-decoration: none;
-            color: black;
-
-            &:hover {
-                background-color: #555bc386;
-                font-weight: bold;
-                border-radius: 0.5rem;
-                padding: 0.5rem;
-                color: rgba(32, 32, 94, 0.87);
-            }
-        }
-    }
-
+	background: rgb(221, 142, 177);
+	background: radial-gradient(circle, rgba(221, 142, 177, 1) 0%, rgba(27, 145, 164, 1) 95%);
+	nav {
+		ul {
+			display: inline-flex;
+			list-style: none;
+			font-family: 'Mali', sans-serif;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			gap: 2rem;
+			margin-right: 1rem;
+			align-items: baseline;
+			li {
+				a {
+					text-decoration: none;
+					color: black;
+					&:hover {
+						background-color: #555bc3af;
+						font-weight: bold;
+						border-radius: 0.5rem;
+						padding: 1rem;
+					}
+				}
+			}
+		}
+	}
 }
-
-.contenedorHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*----LOGO arte rox-----*/
 .logo {
-    width: auto;
-    max-height: 150px;
-    border-radius: 5% 5%;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    opacity: calc(0.8);
-    box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
+	width: auto;
+	max-height: 150px;
+	border-radius: 5% 5%;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	opacity: calc(0.8);
+	box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
+	-webkit-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
+	-moz-box-shadow: 24px 13px 10px 1px rgba(0, 0, 0, 0.66);
 }
-
-/*img LUPA*/
 .imgLupa {
-    width: 0.8cm;
-    height: 0.8cm;
-    margin-right: 1rem;
-
-    &:hover {
-        background-color: #555bc3b7;
-        font-weight: bold;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-    }
+	width: 0.8cm;
+	height: 0.8cm;
+	margin-right: 1rem;
+	&:hover {
+		background-color: #555bc3b7;
+		font-weight: bold;
+		border-radius: 0.5rem;
+		padding: 0.5rem;
+	}
+}
+.contenedorHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
