@@ -19,17 +19,14 @@
 		text-align: center;
 		background-image: url(../img/fondo-css-3.jpg);
 		top: 0;
+		position: sticky;
 	}
 }
 section {
 	margin-top: 0.5rem;
 	size: 60%;
 }
-.imagenInicio {
-	width: auto;
-	height: auto;
-	margin-top: 0.5rem;
-}
+
 .listaProductos {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
