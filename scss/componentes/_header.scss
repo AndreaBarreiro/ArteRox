@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 header {
 	background: rgb(221, 142, 177);
 	background: radial-gradient(circle, rgba(221, 142, 177, 1) 0%, rgba(27, 145, 164, 1) 95%);
@@ -5,7 +7,7 @@ header {
 		ul {
 			display: inline-flex;
 			list-style: none;
-			font-family: 'Mali', sans-serif;
+			font-family:$fuente-principal;
 			font-size: 2rem;
 			text-transform: uppercase;
 			gap: 2rem;
@@ -14,13 +16,13 @@ header {
 			li {
 				a {
 					text-decoration: none;
-					color: black;
+					color:$color-principal;
 					&:hover {
-						background-color: #555bc3af;
+						background-color:$color-background-enlaces;
 						font-weight: bold;
 						border-radius: 0.5rem;
 						padding: 1rem;
-						color: rgba(26, 26, 114, 0.877);
+						color:$color-hover;
 					}
 				}
 			}
@@ -44,7 +46,7 @@ header {
 	height: 0.8cm;
 	margin-right: 1rem;
 	&:hover {
-		background-color: #555bc3b7;
+		background-color:$color-background-enlaces;
 		font-weight: bold;
 		border-radius: 0.5rem;
 		padding: 0.5rem;

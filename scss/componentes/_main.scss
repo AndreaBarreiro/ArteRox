@@ -8,13 +8,15 @@
 	-o-background-size: cover;
 	background-size: cover;
 }
+
 .carousel-inner {
 	img {
 		width: 100%;
 		max-height: 700px;
 	}
 }
-.fondoh1Inicio {
+
+.fondohInicio {
 	h1 {
 		text-align: center;
 		background-image: url(../img/fondo-css-3.jpg);
@@ -22,6 +24,7 @@
 		position: sticky;
 	}
 }
+
 section {
 	margin-top: 0.5rem;
 	size: 60%;
@@ -34,6 +37,7 @@ section {
 	gap: 2rem;
 	margin: 1rem;
 	padding: 0.8rem;
+
 	div {
 		a {
 			display: block;
@@ -42,14 +46,16 @@ section {
 			font-weight: 500;
 			text-transform: uppercase;
 			text-decoration: none;
-			color: #471616;
+			color: $color-cards;
 		}
+
 		display: inline-block;
 		text-align: center;
 		border: 1px solid black;
 		box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
 		-webkit-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
 		-moz-box-shadow: 13px 15px 14px 1px rgba(0, 0, 0, 0.67);
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -57,24 +63,29 @@ section {
 			transition: all 1s;
 		}
 	}
+
 	section {
 		display: inline-block;
 		text-align: center;
 	}
+
 	&:hover {
 		background-color: rgba(109, 47, 73, 0.589);
 		transition-duration: 2s;
 	}
 }
+
 .textoenContenedor {
 	position: relative;
 	width: 100%;
 	height: 300px;
 	box-shadow: inset 0px -66px 5px -33px #174a53;
+
 	div {
 		transition: background-color linear 1s;
 		background: rgb(155, 104, 151);
 	}
+
 	a {
 		position: absolute;
 		bottom: 0;
@@ -90,50 +101,62 @@ section {
 		transition-duration: 3s;
 	}
 }
+
 .tutorial {
 	grid-column: 1 / 3;
 	text-decoration: underline;
 }
+
 .etapaFinal {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr;
 	margin-top: 3rem;
+
 	div {
 		h2 {
 			text-align: center;
 		}
+
 		padding: 1rem;
 		margin-bottom: 1rem;
 	}
 }
+
 .tutorialTitulo {
 	background-color: #3EECAC;
 	background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
 	padding: 0.7rem;
 	text-transform: uppercase;
 }
+
 .tutorialconVideo {
 	display: grid;
 	grid-template-columns: 2fr 1.5fr;
 	grid-template-rows: 0.5fr 1fr 2fr;
 }
+
 .video {
 	display: block;
 	margin: 0 auto;
 }
+
 .trabajando {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.5fr 1fr 0.8fr;
+	grid-template-rows: 0.3fr 1fr 0.8fr;
 	grid-template-areas: "tituloTrabajando tituloTrabajando" "imgTrabajando imgTrabajando" "textoTrabajando textoTrabajando";
 }
+
 .tituloTrabajando {
 	padding-top: 1rem;
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
 	background-color: rgba(190, 149, 158, 0.514);
+	font-weight: 500;
+	color:$color-principal;
 }
+
 .imgTrabajando {
 	width: 200px;
 	height: 200px;
@@ -143,38 +166,46 @@ section {
 	box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+
 	&:hover {
 		transform: scale(1.2);
 	}
 }
+
 .textoTrabajando {
 	display: inline;
 	margin-top: 1.5rem;
 }
+
 .blog {
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 0.5fr;
+
 		img {
 			width: auto;
 			height: 300px;
 			object-fit: cover;
 		}
+
 		p {
 			font-family: sans-serif;
 			color: rgb(16, 6, 53);
 		}
 	}
+
 	border: solid;
 	border-color: #93D6D6 #B79AD4;
 	border-style: inset;
+
 	h2 {
 		background-color: rgba(128, 128, 128, 0.507);
 		padding: 1rem;
 		margin-top: 0;
 	}
 }
+
 .blogClientes {
 	div {
 		display: grid;

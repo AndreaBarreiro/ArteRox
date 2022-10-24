@@ -1,21 +1,24 @@
+@import "../base/variables";
+
 footer {
 	ul {
 		display: inline-flex;
 		list-style: none;
-		font-family: 'Mali', sans-serif;
+		font-family:$fuente-principal;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		gap: 2rem;
 		li {
 			a {
 				text-decoration: none;
-				color: rgba(51, 43, 47, 0.96);
+				color: $color-principal;
 				justify-content: flex-end;
 				&:hover {
-					background-color: #555bc386;
+					background-color:$color-background-enlaces;
 					font-weight: bold;
 					border-radius: 0.5rem;
 					padding: 0.5rem;
+					color: $color-hover;
 				}
 			}
 		}
