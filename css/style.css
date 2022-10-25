@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -13,7 +14,7 @@ img {
   max-width: 100%; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'mali';
   font-weight: 700; }
 
@@ -40,7 +41,7 @@ header {
     display: inline-flex;
     list-style: none;
     font-family: "Mali", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     gap: 2rem;
     margin-right: 1rem;
@@ -83,8 +84,6 @@ header {
   align-items: center; }
 
 /*Carrusel*/
-/** hero o inicio del main **/
-/*transicion del div productos*/
 .imgCarrusel {
   width: auto;
   -webkit-background-size: cover;
@@ -106,6 +105,7 @@ section {
   margin-top: 0.5rem;
   size: 60%; }
 
+/*----tarjetas de productos------*/
 .listaProductos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,12 +241,17 @@ section {
     background-color: rgba(128, 128, 128, 0.507);
     padding: 1rem;
     margin-top: 0; }
+  .blog h3::after {
+    content: url("💗"); }
 
 .blogClientes div {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   border: 1px rgba(0, 0, 0, 0.37) dashed; }
+
+.blogClientes p::after {
+  content: url("//img/frase-de-entrenamiento.png"); }
 
 footer ul {
   display: inline-flex;

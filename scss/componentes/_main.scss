@@ -1,6 +1,5 @@
 /*Carrusel*/
-/** hero o inicio del main **/
-/*transicion del div productos*/
+
 .imgCarrusel {
 	width: auto;
 	-webkit-background-size: cover;
@@ -29,6 +28,8 @@ section {
 	margin-top: 0.5rem;
 	size: 60%;
 }
+
+/*----tarjetas de productos------*/
 
 .listaProductos {
 	display: grid;
@@ -154,7 +155,7 @@ section {
 	text-decoration-style: wavy;
 	background-color: rgba(190, 149, 158, 0.514);
 	font-weight: 500;
-	color:$color-principal;
+	color: $color-principal;
 }
 
 .imgTrabajando {
@@ -204,6 +205,12 @@ section {
 		padding: 1rem;
 		margin-top: 0;
 	}
+
+	h3 {
+		&::after {
+			content: url("💗");
+		}
+	}
 }
 
 .blogClientes {
@@ -212,5 +219,11 @@ section {
 		grid-template-columns: 2fr 1fr;
 		grid-template-rows: 1fr;
 		border: 1px rgba(0, 0, 0, 0.37) dashed;
+	}
+
+	p {
+		&::after {
+			content: url("//img/frase-de-entrenamiento.png");
+		}
 	}
 }
