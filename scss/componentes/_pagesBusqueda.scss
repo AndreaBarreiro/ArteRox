@@ -1,9 +1,9 @@
+@import "../base/variables";
+
 .inputB {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin: 1rem;
+    @include flex (flex, space-between, center);
 }
 
 .botonEnviar {

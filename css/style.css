@@ -288,11 +288,11 @@ footer section a {
   font-size: 1rem; }
 
 .inputB {
-  display: flex;
   flex-direction: column;
+  margin: 1rem;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 1rem; }
+  align-items: center; }
 
 .botonEnviar {
   width: 10%;
@@ -307,8 +307,8 @@ main form {
 .formulario {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .formulario section img {
     max-width: 100%; }
   .formulario div {
@@ -330,9 +330,9 @@ main form {
 
 .quienSoy__contenedor {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
 
 main div img {
   width: 70%;

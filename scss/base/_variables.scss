@@ -8,3 +8,17 @@ $color-cards: #471616;
 //Fuente
 
 $fuente-principal: 'Mali', sans-serif;
+
+// Mixins
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
