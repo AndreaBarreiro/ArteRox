@@ -209,7 +209,7 @@ section {
 
 	h3 {
 		&::after {
-			content: url("💗");
+			content: url("../img/corazon.png");
 		}
 	}
 }
@@ -224,7 +224,7 @@ section {
 
 	p {
 		&::after {
-			content: url("//img/frase-de-entrenamiento.png");
+			content: url("../img/frase-de-entrenamiento.png");
 		}
 	}
 }

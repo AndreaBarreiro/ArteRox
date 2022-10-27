@@ -9,6 +9,9 @@
 .quienSoy__contenedor {
 	@include flex (flex, center, center);
 	flex-direction: column;
+	p {
+		font-weight: 500;
+	}
 	
 }
 main {
