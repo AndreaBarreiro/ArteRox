@@ -145,7 +145,7 @@ section {
 .trabajando {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.8fr;
+	grid-template-rows: 0.3fr 0.7fr 0.8fr;
 	grid-template-areas: "tituloTrabajando tituloTrabajando" "imgTrabajando imgTrabajando" "textoTrabajando textoTrabajando";
 }
 
@@ -164,6 +164,7 @@ section {
 	display: block;
 	margin: 0 auto;
 	transition: 2s;
+	align-self: center;
 	box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);

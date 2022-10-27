@@ -21,6 +21,10 @@
         font-size: 2rem;
         transition-duration: none;
     }
+
+    .logo {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -56,21 +60,40 @@
 
 
 @media screen and (max-width: 600px) {
+
+    .contenedorHeader div nav ul {
+        gap: 1rem;
+    }
+
     .listaProductos {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+
+    .logo {
+        width: 50%;
+        margin-left: 0.5rem;
+    }
+
+    footer div {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
+
+    .contenedorHeader div nav ul li {
+        font-size: 1.2rem;
+    }
+
     .listaProductos {
         grid-template-columns: 1fr;
         grid-template-rows: 8fr;
     }
 
     .imgLupa {
-        width: 30%;
-        height: 30%;
+        width: 60%;
+        height: 60%;
     }
 
     .etapaFinal div {

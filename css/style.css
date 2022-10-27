@@ -195,7 +195,7 @@ section {
 .trabajando {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 1fr 0.8fr;
+  grid-template-rows: 0.3fr 0.7fr 0.8fr;
   grid-template-areas: "tituloTrabajando tituloTrabajando" "imgTrabajando imgTrabajando" "textoTrabajando textoTrabajando"; }
 
 .tituloTrabajando {
@@ -212,6 +212,7 @@ section {
   display: block;
   margin: 0 auto;
   transition: 2s;
+  align-self: center;
   box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75); }
@@ -252,6 +253,76 @@ section {
 
 .blogClientes p::after {
   content: url("//img/frase-de-entrenamiento.png"); }
+
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  .listaProductos div a {
+    font-size: 2rem; }
+  .blogClientes div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; } }
+
+@media screen and (max-width: 700px) {
+  .listaProductos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .listaProductos div a {
+    font-size: 2rem;
+    transition-duration: none; }
+  .logo {
+    width: 50%; } }
+
+@media screen and (max-width: 800px) {
+  .etapaFinal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+  .etapaFinal div {
+    margin-bottom: 0; }
+  .blogClientes div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-block: 0;
+    block-size: 300px;
+    align-content: center; }
+  .blog div img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%; }
+  footer div {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorHeader div nav ul {
+    gap: 1rem; }
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .logo {
+    width: 50%;
+    margin-left: 0.5rem; }
+  footer div {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorHeader div nav ul li {
+    font-size: 1.2rem; }
+  .listaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr; }
+  .imgLupa {
+    width: 60%;
+    height: 60%; }
+  .etapaFinal div {
+    width: 95%; }
+  .tutorialGral div {
+    width: 95%;
+    justify-content: center;
+    align-items: center; }
+  .video {
+    width: 95%; }
+  .trabajando img {
+    width: 80%; } }
 
 footer ul {
   display: inline-flex;
@@ -352,7 +423,9 @@ main div img {
     grid-template-rows: repeat(3, 1fr); }
   .listaProductos div a {
     font-size: 2rem;
-    transition-duration: none; } }
+    transition-duration: none; }
+  .logo {
+    width: 50%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {
@@ -375,17 +448,26 @@ main div img {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 600px) {
+  .contenedorHeader div nav ul {
+    gap: 1rem; }
   .listaProductos {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr); } }
+    grid-template-rows: repeat(4, 1fr); }
+  .logo {
+    width: 50%;
+    margin-left: 0.5rem; }
+  footer div {
+    width: 100%; } }
 
 @media screen and (max-width: 480px) {
+  .contenedorHeader div nav ul li {
+    font-size: 1.2rem; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
   .imgLupa {
-    width: 30%;
-    height: 30%; }
+    width: 60%;
+    height: 60%; }
   .etapaFinal div {
     width: 95%; }
   .tutorialGral div {
