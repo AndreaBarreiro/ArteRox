@@ -91,8 +91,7 @@ header {
   background-size: cover; }
 
 .carousel-inner img {
-  width: 100%;
-  max-height: 700px; }
+  height: 85vh; }
 
 .fondohInicio h1 {
   text-align: center;
