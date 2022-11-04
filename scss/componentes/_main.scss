@@ -11,6 +11,8 @@
 .carousel-inner {
 	img {
 		height: 85vh;
+		object-fit: contain;
+		background: rgba(190, 149, 158, 0.377);
 	}
 }
 
@@ -144,12 +146,27 @@ section {
 .trabajando {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.3fr 0.7fr 0.8fr;
-	grid-template-areas: "tituloTrabajando tituloTrabajando" "imgTrabajando imgTrabajando" "textoTrabajando textoTrabajando";
+	grid-template-rows: 0.2fr 0.7fr 0.8fr;
+	grid-template-areas: "tituloTrabajando tituloTrabajando2" "imgTrabajando imgTrabajando2" "textoTrabajando textoTrabajando2";
 }
 
 .tituloTrabajando {
-	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0.5rem;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	background-color: rgba(190, 149, 158, 0.514);
+	font-weight: 500;
+	color: $color-principal;
+}
+
+.tituloTrabajando2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0.5rem;
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
 	background-color: rgba(190, 149, 158, 0.514);
@@ -173,7 +190,29 @@ section {
 	}
 }
 
+.imgTrabajando2 {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	transition: 2s;
+	align-self: center;
+	box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+
 .textoTrabajando {
+	display: inline;
+	margin-top: 1.5rem;
+}
+
+.textoTrabajando2 {
 	display: inline;
 	margin-top: 1.5rem;
 }
