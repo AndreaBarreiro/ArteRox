@@ -84,17 +84,24 @@ header {
   align-items: center; }
 
 /*Carrusel*/
-.imgCarrusel {
-  width: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.carousel-inner img {
-  height: 85vh;
-  object-fit: contain;
-  background: rgba(190, 149, 158, 0.377); }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; }
+  .hero .imgCarrusel {
+    width: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .hero .imgCarrusel .carousel-inner img {
+      height: 400px;
+      object-fit: cover; }
+  .hero #demotext {
+    text-shadow: 0 0 10px #FFFFFF, 3px 8px 1px rgba(206, 89, 55, 0.29);
+    color: #4E4E4E; }
 
 .fondohInicio h1 {
   text-align: center;
@@ -329,6 +336,9 @@ section {
     display: block;
     margin: 2rem;
     list-style: thai; }
+  .hero {
+    display: block;
+    margin: 1rem; }
   .listaProductos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
@@ -408,6 +418,97 @@ footer section a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem; }
 
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  .listaProductos div a {
+    font-size: 2rem; }
+  .blogClientes div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; } }
+
+@media screen and (max-width: 700px) {
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .listaProductos div a {
+    font-size: 2rem;
+    transition-duration: none; }
+  .logo {
+    width: 50%; } }
+
+@media screen and (max-width: 800px) {
+  .etapaFinal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+  .etapaFinal div {
+    margin-bottom: 0; }
+  .blogClientes div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-block: 0;
+    block-size: 300px;
+    align-content: center; }
+  .blog div img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%; }
+  footer div {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorHeader div nav ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai; }
+  .hero {
+    display: block;
+    margin: 1rem; }
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .logo {
+    width: 70%;
+    margin-left: 1rem; }
+  .imgLupa {
+    width: 50%;
+    height: 50%; }
+  footer ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai;
+    justify-content: flex-end; }
+  .copy {
+    width: 100%; }
+  footer div section {
+    padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorHeader div nav ul li {
+    font-size: 1.2rem; }
+  .listaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr; }
+  .etapaFinal div {
+    width: 95%; }
+  .video {
+    width: 95%; }
+  .trabajando {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+  .trabajando img {
+    width: 80%; }
+  .tituloTrabajando::before {
+    content: "☝"; }
+  .tituloTrabajando2::before {
+    content: "✌"; }
+  .textoTrabajando::before {
+    content: "☝"; }
+  .textoTrabajando2::before {
+    content: "✌"; } }
+
 .inputB {
   flex-direction: column;
   margin: 1rem;
@@ -419,6 +520,97 @@ footer section a {
   width: 10%;
   height: 10%;
   align-items: center; }
+
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  .listaProductos div a {
+    font-size: 2rem; }
+  .blogClientes div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; } }
+
+@media screen and (max-width: 700px) {
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .listaProductos div a {
+    font-size: 2rem;
+    transition-duration: none; }
+  .logo {
+    width: 50%; } }
+
+@media screen and (max-width: 800px) {
+  .etapaFinal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+  .etapaFinal div {
+    margin-bottom: 0; }
+  .blogClientes div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-block: 0;
+    block-size: 300px;
+    align-content: center; }
+  .blog div img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%; }
+  footer div {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorHeader div nav ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai; }
+  .hero {
+    display: block;
+    margin: 1rem; }
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .logo {
+    width: 70%;
+    margin-left: 1rem; }
+  .imgLupa {
+    width: 50%;
+    height: 50%; }
+  footer ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai;
+    justify-content: flex-end; }
+  .copy {
+    width: 100%; }
+  footer div section {
+    padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorHeader div nav ul li {
+    font-size: 1.2rem; }
+  .listaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr; }
+  .etapaFinal div {
+    width: 95%; }
+  .video {
+    width: 95%; }
+  .trabajando {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+  .trabajando img {
+    width: 80%; }
+  .tituloTrabajando::before {
+    content: "☝"; }
+  .tituloTrabajando2::before {
+    content: "✌"; }
+  .textoTrabajando::before {
+    content: "☝"; }
+  .textoTrabajando2::before {
+    content: "✌"; } }
 
 main form {
   font-size: 1.5rem;
@@ -449,6 +641,97 @@ main form {
     color: grey; }
 
 /*Quien Soy*/
+/*Media Queries*/
+@media screen and (max-width: 900px) {
+  .listaProductos div a {
+    font-size: 2rem; }
+  .blogClientes div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; } }
+
+@media screen and (max-width: 700px) {
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .listaProductos div a {
+    font-size: 2rem;
+    transition-duration: none; }
+  .logo {
+    width: 50%; } }
+
+@media screen and (max-width: 800px) {
+  .etapaFinal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+  .etapaFinal div {
+    margin-bottom: 0; }
+  .blogClientes div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-block: 0;
+    block-size: 300px;
+    align-content: center; }
+  .blog div img {
+    object-fit: contain;
+    width: 70%;
+    height: 70%; }
+  footer div {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorHeader div nav ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai; }
+  .hero {
+    display: block;
+    margin: 1rem; }
+  .listaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .logo {
+    width: 70%;
+    margin-left: 1rem; }
+  .imgLupa {
+    width: 50%;
+    height: 50%; }
+  footer ul {
+    display: block;
+    margin: 2rem;
+    list-style: thai;
+    justify-content: flex-end; }
+  .copy {
+    width: 100%; }
+  footer div section {
+    padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorHeader div nav ul li {
+    font-size: 1.2rem; }
+  .listaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr; }
+  .etapaFinal div {
+    width: 95%; }
+  .video {
+    width: 95%; }
+  .trabajando {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+  .trabajando img {
+    width: 80%; }
+  .tituloTrabajando::before {
+    content: "☝"; }
+  .tituloTrabajando2::before {
+    content: "✌"; }
+  .textoTrabajando::before {
+    content: "☝"; }
+  .textoTrabajando2::before {
+    content: "✌"; } }
+
 .quienSoy h1 {
   text-align: center; }
 
@@ -507,6 +790,9 @@ main div img {
     display: block;
     margin: 2rem;
     list-style: thai; }
+  .hero {
+    display: block;
+    margin: 1rem; }
   .listaProductos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }

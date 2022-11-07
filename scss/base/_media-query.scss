@@ -67,6 +67,11 @@
         list-style: thai;
     }
 
+    .hero {
+        display: block;
+        margin: 1rem;
+    }
+
     .listaProductos {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);

@@ -1,19 +1,31 @@
 /*Carrusel*/
 
-.imgCarrusel {
-	width: auto;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
 
-.carousel-inner {
-	img {
-		height: 85vh;
-		object-fit: contain;
-		background: rgba(190, 149, 158, 0.377);
+	.imgCarrusel {
+		width: auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		.carousel-inner {
+			img {
+				height: 400px;
+				object-fit: cover;
+			}
+		}
 	}
+
+	#demotext {
+		text-shadow: 0 0 10px #FFFFFF, 3px 8px 1px rgba(206,89,55,0.29);
+		color: #4E4E4E;
+		}
 }
 
 .fondohInicio {
