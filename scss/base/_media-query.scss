@@ -34,10 +34,6 @@
         grid-template-rows: 1fr 0.5fr;
     }
 
-    .etapaFinal div {
-        margin-bottom: 0;
-    }
-
     .blogClientes div {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -109,13 +105,18 @@
         font-size: 1.2rem;
     }
 
+    .hero .imgCarrusel .carousel-inner img {
+        height: inherit;
+        object-fit: contain;
+    }
+
     .listaProductos {
         grid-template-columns: 1fr;
         grid-template-rows: 8fr;
     }
 
-    .etapaFinal div {
-        width: 95%;
+    .blog div p {
+        font-size: 1.5rem;
     }
 
     .video {
@@ -126,13 +127,6 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-        grid-template-areas:
-            "tituloTrabajando"
-            "imgTrabajando"
-            "textoTrabajando"
-            "tituloTrabajando2"
-            "imgTrabajando2"
-            "textoTrabajando2";
     }
 
     .trabajando img {

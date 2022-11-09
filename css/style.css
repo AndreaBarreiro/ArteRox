@@ -7,7 +7,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 /** globales **/
 img {
@@ -82,6 +82,41 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** reset para REMS- 62.5% = 10px de 16px **/ }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/** globales **/
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: 4.5rem;
+  font-family: 'mali';
+  font-weight: 700; }
+
+h2 {
+  font-size: 3rem;
+  font-family: 'mali';
+  font-weight: 500; }
+
+h3 {
+  font-size: 2rem;
+  font-family: 'mali';
+  font-weight: 500; }
+
+p {
+  font-size: 2rem;
+  font-family: 'mali';
+  font-weight: 300;
+  text-align: center; }
 
 /*Carrusel*/
 .hero {
@@ -203,8 +238,7 @@ section {
 .trabajando {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 0.7fr 0.8fr;
-  grid-template-areas: "tituloTrabajando tituloTrabajando2" "imgTrabajando imgTrabajando2" "textoTrabajando textoTrabajando2"; }
+  grid-template-rows: 0.2fr 0.7fr 0.8fr; }
 
 .tituloTrabajando {
   display: flex;
@@ -315,8 +349,6 @@ section {
   .etapaFinal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr; }
-  .etapaFinal div {
-    margin-bottom: 0; }
   .blogClientes div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -361,18 +393,20 @@ section {
 @media screen and (max-width: 480px) {
   .contenedorHeader div nav ul li {
     font-size: 1.2rem; }
+  .hero .imgCarrusel .carousel-inner img {
+    height: inherit;
+    object-fit: contain; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
-  .etapaFinal div {
-    width: 95%; }
+  .blog div p {
+    font-size: 1.5rem; }
   .video {
     width: 95%; }
   .trabajando {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr; }
   .trabajando img {
     width: 80%; }
   .tituloTrabajando::before {
@@ -440,8 +474,6 @@ footer section a {
   .etapaFinal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr; }
-  .etapaFinal div {
-    margin-bottom: 0; }
   .blogClientes div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -486,18 +518,20 @@ footer section a {
 @media screen and (max-width: 480px) {
   .contenedorHeader div nav ul li {
     font-size: 1.2rem; }
+  .hero .imgCarrusel .carousel-inner img {
+    height: inherit;
+    object-fit: contain; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
-  .etapaFinal div {
-    width: 95%; }
+  .blog div p {
+    font-size: 1.5rem; }
   .video {
     width: 95%; }
   .trabajando {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr; }
   .trabajando img {
     width: 80%; }
   .tituloTrabajando::before {
@@ -543,8 +577,6 @@ footer section a {
   .etapaFinal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr; }
-  .etapaFinal div {
-    margin-bottom: 0; }
   .blogClientes div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -589,18 +621,20 @@ footer section a {
 @media screen and (max-width: 480px) {
   .contenedorHeader div nav ul li {
     font-size: 1.2rem; }
+  .hero .imgCarrusel .carousel-inner img {
+    height: inherit;
+    object-fit: contain; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
-  .etapaFinal div {
-    width: 95%; }
+  .blog div p {
+    font-size: 1.5rem; }
   .video {
     width: 95%; }
   .trabajando {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr; }
   .trabajando img {
     width: 80%; }
   .tituloTrabajando::before {
@@ -663,8 +697,6 @@ main form {
   .etapaFinal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr; }
-  .etapaFinal div {
-    margin-bottom: 0; }
   .blogClientes div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -709,18 +741,20 @@ main form {
 @media screen and (max-width: 480px) {
   .contenedorHeader div nav ul li {
     font-size: 1.2rem; }
+  .hero .imgCarrusel .carousel-inner img {
+    height: inherit;
+    object-fit: contain; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
-  .etapaFinal div {
-    width: 95%; }
+  .blog div p {
+    font-size: 1.5rem; }
   .video {
     width: 95%; }
   .trabajando {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr; }
   .trabajando img {
     width: 80%; }
   .tituloTrabajando::before {
@@ -769,8 +803,6 @@ main div img {
   .etapaFinal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr; }
-  .etapaFinal div {
-    margin-bottom: 0; }
   .blogClientes div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -815,18 +847,20 @@ main div img {
 @media screen and (max-width: 480px) {
   .contenedorHeader div nav ul li {
     font-size: 1.2rem; }
+  .hero .imgCarrusel .carousel-inner img {
+    height: inherit;
+    object-fit: contain; }
   .listaProductos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr; }
-  .etapaFinal div {
-    width: 95%; }
+  .blog div p {
+    font-size: 1.5rem; }
   .video {
     width: 95%; }
   .trabajando {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    grid-template-areas: "tituloTrabajando" "imgTrabajando" "textoTrabajando" "tituloTrabajando2" "imgTrabajando2" "textoTrabajando2"; }
+    grid-template-rows: 0.2fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr; }
   .trabajando img {
     width: 80%; }
   .tituloTrabajando::before {

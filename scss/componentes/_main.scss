@@ -1,3 +1,6 @@
+@import "../base/generales";
+
+
 /*Carrusel*/
 
 .hero {
@@ -23,9 +26,9 @@
 	}
 
 	#demotext {
-		text-shadow: 0 0 10px #FFFFFF, 3px 8px 1px rgba(206,89,55,0.29);
+		text-shadow: 0 0 10px #FFFFFF, 3px 8px 1px rgba(206, 89, 55, 0.29);
 		color: #4E4E4E;
-		}
+	}
 }
 
 .fondohInicio {
@@ -159,7 +162,6 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.2fr 0.7fr 0.8fr;
-	grid-template-areas: "tituloTrabajando tituloTrabajando2" "imgTrabajando imgTrabajando2" "textoTrabajando textoTrabajando2";
 }
 
 .tituloTrabajando {
