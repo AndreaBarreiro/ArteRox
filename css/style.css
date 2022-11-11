@@ -343,7 +343,9 @@ section {
     font-size: 2rem;
     transition-duration: none; }
   .logo {
-    width: 50%; } }
+    width: 50%; }
+  .imgQuiensoy {
+    max-width: 90%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {
@@ -468,7 +470,9 @@ footer section a {
     font-size: 2rem;
     transition-duration: none; }
   .logo {
-    width: 50%; } }
+    width: 50%; }
+  .imgQuiensoy {
+    max-width: 90%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {
@@ -571,7 +575,9 @@ footer section a {
     font-size: 2rem;
     transition-duration: none; }
   .logo {
-    width: 50%; } }
+    width: 50%; }
+  .imgQuiensoy {
+    max-width: 90%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {
@@ -691,7 +697,9 @@ main form {
     font-size: 2rem;
     transition-duration: none; }
   .logo {
-    width: 50%; } }
+    width: 50%; }
+  .imgQuiensoy {
+    max-width: 90%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {
@@ -777,10 +785,6 @@ main form {
   .quienSoy__contenedor p {
     font-weight: 500; }
 
-main div img {
-  width: 70%;
-  height: 70%; }
-
 /*Media Queries*/
 @media screen and (max-width: 900px) {
   .listaProductos div a {
@@ -797,7 +801,9 @@ main div img {
     font-size: 2rem;
     transition-duration: none; }
   .logo {
-    width: 50%; } }
+    width: 50%; }
+  .imgQuiensoy {
+    max-width: 90%; } }
 
 @media screen and (max-width: 800px) {
   .etapaFinal {

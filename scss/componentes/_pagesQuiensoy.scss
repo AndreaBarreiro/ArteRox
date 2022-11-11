@@ -7,19 +7,12 @@
 		text-align: center;
 	}
 }
+
 .quienSoy__contenedor {
 	@include flex (flex, center, center);
 	flex-direction: column;
+
 	p {
 		font-weight: 500;
-	}
-	
-}
-main {
-	div {
-		img {
-			width: 70%;
-			height: 70%;
-		}
 	}
 }
